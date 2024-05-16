@@ -23,8 +23,10 @@ const LoginRegister = ({ type }: Props) => {
     if (res.success) {
       if (type === "login") {
         setCookie("refreshToken", res.token, { path: "/" });
+        navigate("/");
+      } else {
+        navigate("/login");
       }
-      navigate("/");
     }
   };
   return (

@@ -14,7 +14,7 @@ import BookmarkPage from "./containers/BookmarkPage/BookmarkPage";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <SearchPage />,
   },
   {
     path: "/login",
